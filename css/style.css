@@ -1,0 +1,142 @@
+.btn-warning {
+    color: rgb(27, 66, 139)!important;
+    font-weight: 600!important;
+    padding: 5px 10px!important;
+}
+
+.darkmode {
+    background: grey;
+}
+
+.important {
+    color: red;
+    font-weight: 600;
+}
+
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 100%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: #007bff;
+    color: #ffffff;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+    border-radius: 4px;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.trash-btn,
+.edit-btn,
+.complete-btn {
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.trash-btn {
+    background: #dc3545;
+    margin-right: 7px;
+}
+
+.edit-btn {
+    background: #17a2b8;
+}
+
+.complete-btn {
+    background: #28a745;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-pencil,
+.fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    background-color: #007bff;
+    color: #ffffff;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select {
+    border-radius: 4px;
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #b9b8c4;
+    top: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+
+
+
